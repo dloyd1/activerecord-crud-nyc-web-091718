@@ -94,7 +94,6 @@ def can_update_multiple_items_at_once
   Movie.all.each{|x|
   x.update(title: "A Movie")}
   movie.save
-  __
 end
 
 def can_destroy_a_single_item
