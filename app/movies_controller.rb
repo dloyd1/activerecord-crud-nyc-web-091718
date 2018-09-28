@@ -89,8 +89,8 @@ def can_update_multiple_items_at_once
   5.times do |i|
     Movie.create(title: "Movie_#{i}", release_date: 2000+i)
   end
-  Movie.all.each |x|
-  x.update(title: "A Movie")
+  Movie.all.each{|x|
+  x.update(title: "A Movie")}
   movie.save
   __
 end
