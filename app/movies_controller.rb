@@ -91,7 +91,6 @@ def can_update_multiple_items_at_once
   end
   Movie.all.each |x|
   x.update(title: "A Movie")
-
   movie.save
   __
 end
